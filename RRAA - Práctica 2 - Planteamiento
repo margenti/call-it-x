@@ -1,0 +1,26 @@
+1. Sobre lo que hay que hacer
+
+  3 clasificadores (distancia euclidea, distancia de mahalanobis y k-NN)
+  Hacer pruebas jugando un poco con las variables (PCA y tal)
+  Probar los clasificadores para ver la precisión, y preparar una presentación con los resultados.
+
+2. Una propuesta de trabajo
+
+  A construcción clasificador distancia euclidea
+  B construcción clasificador distancia de mahalanobis
+  C construcción clasificador k-NN
+  D recogida de datos (hacer pruebas y estadisticas y crear algún grafico)
+  E presentación, hacerla y exponerla
+
+3. Una primera asignación
+
+  Álvaro  := A
+  Mariano := B
+  Roberto := C
+  Irene y Carlos := D
+  Agustín := E
+  Charlles := #NDEF
+
+Primera reunión formal: 
+  Jueves 18 de diciembre, 18:30 hrs.
+  Afuera del aula 3203 (la de clases, en las mesas aledañas)
