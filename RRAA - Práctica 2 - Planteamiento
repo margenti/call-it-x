@@ -12,15 +12,30 @@
   D recogida de datos (hacer pruebas y estadisticas y crear algún grafico)
   E presentación, hacerla y exponerla
 
-3. Una primera asignación
+3. Asignación
 
-Álvaro := A
-Mariano := B
-Roberto := C
-Irene y Carlos := D
-Agustín := E
-Charlles := #NDEF
+  A : { Álvaro (construye)  , XXXXXX (prueba) }
+  B : { Mariano (construye) , YYYYYY (prueba) }
+  C : { Roberto (construye) , Irene (prueba) }
+  D : Agustín
+                     donde: XXXXXX,YYYYYY E { Carlos|Charles }
 
-Primera reunión formal:
+4. Primera reunión formal:
   Jueves 18 de diciembre, 18:30 hrs.
-  Afuera del aula 3203 (la de clases, en las mesas aledañas)
+  Aula 3203 (la de clases, en las mesas aledañas)
+  Asistieron: Álvaro, Irene, Roberto, Agustín.
+  
+  Resumen:
+  Álvaro, Mariano y Roberto construirán los tres clasificadores, uno cada uno. Al tiempo Irene, Carlos y Charlles harán la recopilación de datos y pruebas; también, cada uno para un clasificador. La idea con esto es que haya parejas de trabajo y se retroalimenten entre ellos. Finalmente, yo sigo con lo que tenía asignado, es decir, la elaboración de la presentación y apoyo inmoral en lo que se necesite.
+
+  Acuerdos globales alcanzados:
+  - Lenguaje de programación a utilizar: Python 2 (releases 2.6/2.7)
+  - Plataforma de control de versiones: GitHub (https://github.com/the-ex-team/call-it-x)
+
+  Acuerdos específicos a alcanzar (llegar a consenso entre los tres programadores): 
+  - Librerías Python por ejemplo scipy
+  - Input y Output de las funciones para que la api sea igual para los tres metodos
+
+  Dudas a despejar:
+  · ¿La distancia euclidea y de mahalanobis es lo mismo que el KNN? (La duda nos la sembró ayer un "topo" del otro equipo y nos hizo tambalearnos)
+  · ¿Para la distancia euclidea y de mahalanobis cogemos la distancia minima absoluta o la distancia media minima entre la foto que queremos catalogar y el set de entrenamiento?
