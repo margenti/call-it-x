@@ -33,9 +33,24 @@
   - Plataforma de control de versiones: GitHub (https://github.com/the-ex-team/call-it-x)
 
   Acuerdos específicos a alcanzar (llegar a consenso entre los tres programadores): 
-  - Librerías Python por ejemplo scipy
-  - Input y Output de las funciones para que la api sea igual para los tres metodos
+  Propuesta de Mariano:
+      librerias y/o metodos a utilizar:
+          (distancias) from scipy.spatial.distance import euclidean (o mahalanobis)
+          (en caso de mahalanobis para la covarianza) from numpy import cov
+          (libreria grafica) from PIL import Image
+          (abrir la foto) i = Image.open('path foto')
+          (convertir en escala de gris) i.convert('L')
+          (dimensión de la foto) i.size
+          (transformarla en una matriz de numeros) matrix=i.load()   (matriz de dimensión i.size[0], i.size[1])
+          (recuperar el valor de un pixel) vec[x,y]   (x,y entre 0 y i.size[0]-1, i.size[1]-1)
 
+      input y output:
+          input : path de una foto
+          output : una letra con el grupo (a,b,c,d,e)
+                              
+          
   Dudas a despejar:
-  · ¿La distancia euclidea y de mahalanobis es lo mismo que el KNN? (La duda nos la sembró ayer un "topo" del otro equipo y nos hizo tambalearnos)
-  · ¿Para la distancia euclidea y de mahalanobis cogemos la distancia minima absoluta o la distancia media minima entre la foto que queremos catalogar y el set de entrenamiento?
+- euclidea y mahalanobis
+   calculas la distancia media (euclidea o de mahalanobis) entre las fotos de cada grupo y eliges el grupo que esté mediamente mas cerca
+- k-nn
+   eliges una metrica (ej euclidea), coges las K fotos mas cerca ENTRE TODOS LOS GRUPOS, y de estas K fotos, miras cual es el grupo más frecuente
