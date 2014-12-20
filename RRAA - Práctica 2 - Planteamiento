@@ -43,6 +43,7 @@
           (dimensión de la foto) i.size
           (transformarla en una matriz de numeros) matrix=i.load()   (matriz de dimensión i.size[0], i.size[1])
           (recuperar el valor de un pixel) matrix[x,y]   (x,y entre 0 y i.size[0]-1, i.size[1]-1)
+          (histograma de la foto) i.histogram()
 
       input y output:
           input : path de una foto
